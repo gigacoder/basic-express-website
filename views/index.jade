@@ -1,0 +1,61 @@
+extends layout
+
+block content
+  .container
+    .row
+      .box
+        .col-lg-12.text-center
+          #carousel-example-generic.carousel.slide
+            // Indicators
+            ol.carousel-indicators.hidden-xs
+              li.active(data-target='#carousel-example-generic', data-slide-to='0')
+              li(data-target='#carousel-example-generic', data-slide-to='1')
+              li(data-target='#carousel-example-generic', data-slide-to='2')
+            // Wrapper for slides
+            .carousel-inner
+              .item.active
+                img.img-responsive.img-full(src='../images/slide-1.jpg', alt='')
+              .item
+                img.img-responsive.img-full(src='../images/slide-2.jpg', alt='')
+              .item
+                img.img-responsive.img-full(src='../images/slide-3.jpg', alt='')
+            // Controls
+            a.left.carousel-control(href='#carousel-example-generic', data-slide='prev')
+              span.icon-prev
+            a.right.carousel-control(href='#carousel-example-generic', data-slide='next')
+              span.icon-next
+          h2.brand-before
+            small Welcome to
+          h1.brand-name HybridApps.io
+          hr.tagline-divider
+          h2
+            small strong Responsive Bootstrap Template
+    .row
+      .box
+        .col-lg-12
+          hr
+          h2.intro-text.text-center
+            | Visit my
+            strong Blog
+          hr
+          img.img-responsive.img-border.img-left(src='../images/blog-pic.jpg', alt='')
+          hr.visible-xs
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          p
+            |Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+    .row
+      .box
+        .col-lg-12
+          hr
+          h2.intro-text.text-center
+            | Beautiful boxes
+            strong to showcase your content
+          hr
+          p
+            | Use as many boxes as you like, and put anything you want in them! They are great for just about anything, the sky's the limit!
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+  // /.container

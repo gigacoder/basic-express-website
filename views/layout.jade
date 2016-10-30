@@ -1,0 +1,58 @@
+doctype html
+html
+  head
+    title #{title} Express Website
+    meta(charset='utf-8')
+    meta( http-equiv='X-UA-Compatible', content='IE=edge')
+    meta( name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+
+
+
+
+
+  body
+    .brand HybridApps.io
+    .tagline-bar My Company Tagline
+    // Navigation
+    nav.navbar.navbar-default(role='navigation')
+      .container
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          // navbar-brand is hidden on larger screens, but visible when the menu is collapsed
+          a.navbar-brand(href='index.html') Business Casual
+        // Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li
+              a(href='/') Home
+            li
+              a(href='about') About
+            li
+              a(href='blog') Blog
+            li
+              a(href='contact') Contact
+
+        // /.navbar-collapse
+      // /.container
+
+    block content
+    footer
+      .container
+        .row
+          .col-lg-12.text-center
+            p Copyright © www.hybridApps.io 2016
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    script(src='javascripts/bootstrap.js')
+    // Script to Activate the Carousel
+    script.
+      $('.carousel').carousel({
+      interval: 5000 //changes the speed
+      })
