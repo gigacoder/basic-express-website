@@ -11,6 +11,7 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    -webkit-font-smoothing: antialised;
 }
 
 h1,
@@ -60,6 +61,7 @@ hr {
 .brand-before,
 .brand-name {
     text-transform: capitalize;
+    color: #ffffff !important;
 }
 
 .brand-before {
@@ -70,7 +72,9 @@ hr {
     margin: 0;
     font-size: 4em;
 }
-
+.text-white{
+  color: #ffffff;
+}
 .tagline-divider {
     margin: 15px auto 3px;
     max-width: 250px;
@@ -81,7 +85,7 @@ hr {
     margin-bottom: 20px;
     padding: 30px 15px;
     background: #fff;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.8);
 }
 
 .intro-text {
@@ -104,12 +108,14 @@ hr {
 
 footer {
     background: #fff;
-    background: rgba(255,255,255,0.9);
+    background: rgba(44, 62, 80,0.8);
 }
 
 footer p {
     margin: 0;
     padding: 50px 0;
+    color: #f4f7f9;
+
 }
 
 @media screen and (min-width:768px) {
@@ -193,4 +199,11 @@ footer p {
 
 .rounded-corner{
   border-radius: 8px;
+}
+/*carousel edit*/
+.carousel-inner{
+  height: 50vh !important;
+}
+.img-border{
+  border: 5px solid #ffffff;
 }
